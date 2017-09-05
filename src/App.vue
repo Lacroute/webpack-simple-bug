@@ -30,19 +30,20 @@ export default {
   },
 
   created () {
-    console.warn('created', this.rand)
+    console.error('some log to fire hot reload.')
+    console.warn('created this.rand = ', this.rand)
   },
 
   mounted () {
-    console.warn('mounted', this.rand)
+    console.warn('mounted this.rand = ', this.rand)
   },
 
   beforeDestroy () {
-    console.warn('beforeDestroy', this.rand)
+    console.warn('beforeDestroy this.rand = ', this.rand)
   },
 
   destroyed () {
-    console.warn('destroyed', this.rand)
+    console.warn('destroyed this.rand = ', this.rand)
   },
 }
 </script>
